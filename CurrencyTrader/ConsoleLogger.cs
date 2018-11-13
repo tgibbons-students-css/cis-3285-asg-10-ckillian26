@@ -10,7 +10,7 @@ namespace CurrencyTrader
         public void LogWarning(string message, params object[] args)
         {
             Console.WriteLine(string.Concat("WARN: ", message), args);
-            using (StreamWriter logfile = File.AppendText("log.xml"))
+            using (StreamWriter logfile = File.AppendText("log2.xml"))
                
             {
                 logfile.WriteLine(string.Concat("WARN: ", message), args);
